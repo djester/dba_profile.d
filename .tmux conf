@@ -1,8 +1,20 @@
+set -g default-shell /bin/bash
+set -g lock-after-time 3600
+set -g lock-command vlock
+
+set -g status on
+set -g status-justify left
+set -g status-keys emacs
+set -g status-left "[#S] "
+set -g status-left-length 10
+set -g status-left-style default
+set -g status-position top
+set -g status-right " #{=21:pane_title} %H:%M %d-%b-%y"
+set -g status-right-length 40
+set -g status-right-style default
+set -g status-utf8 on
+
 # status bar colors etc
-#set-option -g status-bg black
-#set-option -g status-fg blue
-#set-option -g status-fg magenta
-#set-option -g status-bg cyan
 
 set-option -g status-bg colour85  
 set-option -g status-fg colour202
@@ -11,10 +23,13 @@ set-option -g status-attr dim
 set-option -g status-interval 5
 set-option -g visual-activity on
 set-option -g status-position top
+
 set-window-option -g monitor-activity on
 set-window-option -g window-status-current-fg white
 set-window-option -g window-status-current-bg red
 
+setw -g window-status-format '#[fg=8,bg=default]#I:#W#F'
+setw -g window-status-current-format '#[fg=8,bg=default]#I:#W#F'
 
 #-------------------------------------------------------#
 #Pane colours
