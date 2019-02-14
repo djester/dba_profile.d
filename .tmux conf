@@ -12,7 +12,6 @@ set -g status-position top
 set -g status-right " #{=21:pane_title} %H:%M %d-%b-%y"
 set -g status-right-length 40
 set -g status-right-style default
-set -g status-utf8 on
 
 # status bar colors etc
 
