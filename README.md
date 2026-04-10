@@ -6,3 +6,6 @@ no passwords and ssh key here :)
 
 global vim config should locate on
 /etc/vim/vimrc or /etc/vimrc
+
+global psqlrc config should locate on
+/etc/postgresql-common/psqlrc
